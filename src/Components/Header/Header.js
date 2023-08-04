@@ -1,5 +1,6 @@
 import React from "react";
 import { DarkThemeToggle, Flowbite } from "flowbite-react";
+import { NavLink } from "react-router-dom";
 import Card from "./Card";
 import HeaderMobile from "./HeaderMobile";
 
@@ -15,11 +16,11 @@ export default function Header() {
               <img src="images/app-logo.png" alt="Golden Coffee" />
             </div>
             {/* //* Menu  */}
-            <ul className="flex gap-x-5 lg:gap-x-9 h-full text-xl text-gray-300 tracking-tightest child:leading-[56px]">
-              <li className="font-DanaMedium text-orange-200">
-                <a href="#">صفحه اصلی</a>
-              </li>
-              <li className="relative group">
+            <ul className="header-link flex gap-x-5 lg:gap-x-9 h-full text-xl text-gray-300 tracking-tightest child:leading-[56px]">
+              <NavLink to="/">
+                صفحه اصلی
+              </NavLink>
+              <NavLink to="/shop" className="relative group">
                 <a
                   href="#"
                   className="group-hover:text-orange-300 transition-colors"
@@ -34,19 +35,19 @@ export default function Header() {
                   <a href="#">کپسول قهوه</a>
                   <a href="#">قهوه زینو برزیلی</a>
                 </div>
-              </li>
-              <li>
-                <a href="#">دیکشنری</a>
-              </li>
-              <li>
-                <a href="#">بلاگ</a>
-              </li>
-              <li>
-                <a href="#">درباره ما</a>
-              </li>
-              <li>
-                <a href="#">تماس با ما</a>
-              </li>
+              </NavLink>
+              <NavLink to="/dictionary">
+                دیکشنری
+              </NavLink>
+              <NavLink to="/about">
+                بلاگ
+              </NavLink>
+              <NavLink to="/blog">
+                درباره ما
+              </NavLink>
+              <NavLink to="/contact">
+                تماس با ما
+              </NavLink>
             </ul>
           </nav>
           {/* //* Card & Theme Toggle & Login Link  */}
@@ -73,12 +74,6 @@ export default function Header() {
                 <Flowbite>
                   <DarkThemeToggle className="text-orange-200" />
                 </Flowbite>
-                {/* <svg className="h-8 w-8 inline-block dark:hidden">
-                <use href="#moon"></use>
-              </svg>
-              <svg className="h-8 w-8 hidden dark:inline-block">
-                <use href="#sun"></use>
-              </svg> */}
               </div>
             </div>
             <span className="block w-px h-14 bg-white/20"></span>
@@ -97,7 +92,6 @@ export default function Header() {
         </div>
       </header>
       <HeaderMobile/>
-      <div className="overlay md:hidden fixed inset-0 w-full h-full bg-black/40 z-10"></div>
     </>
   );
 }
