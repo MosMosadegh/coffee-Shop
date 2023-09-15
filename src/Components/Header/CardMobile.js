@@ -73,16 +73,16 @@ export default function CardMobile({ isShowCardMobile, setIsShowCardMobile }) {
       <div className="flex items-end mb-8 gap-x-4 mt-auto">
           <a
             href="#"
-            class="flex justify-center items-center w-28 h-11 text-white bg-teal-600 dark:bg-emerald-500  rounded-xl"
+            className="flex justify-center items-center w-28 h-11 text-white bg-teal-600 dark:bg-emerald-500  rounded-xl"
           >
             ثبت سفارش
           </a>
           <div>
-            <span class=" font-DanaMedium text-gray-300 text-xs tracking-tighter">
+            <span className=" font-DanaMedium text-gray-300 text-xs tracking-tighter">
               مبلغ قابل پرداخت
             </span>
-            <div class="text-zinc-700 dark:text-white font-DanaDemiBold">
-              350000<span class="font-Dana text-xs"> تومان</span>
+            <div className="text-zinc-700 dark:text-white font-DanaDemiBold">
+              350000<span className="font-Dana text-xs"> تومان</span>
             </div>
           </div>
         </div>

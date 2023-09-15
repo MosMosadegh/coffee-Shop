@@ -1,11 +1,12 @@
 import React from "react";
 import Products from "./Products";
+import CoffeeClub from "./CoffeeClub";
 
 export default function Home() {
   return (
     <>
     <div className=" relative h-[200px] xs:h-auto xs:aspect-[2/1] md:aspect-auto bg-home-mobile md:bg-home-desktop bg-no-repeat bg-cover bg-[center_top]">
-      <div className="container pl-20 md:pt-16 relative overflow-y-hidden md:min-h-screen flex items-center justify-end ">
+      <div className="container md:pl-20 pt-8 md:pt-16 relative overflow-y-hidden md:min-h-screen flex items-center justify-end ">
         <div className=" text-white">
           <h2 className="font-MorabbaBold text-2xl md:text-4xl/[62px] lg:text-6xl/[62px] mb-0.5 md:mb-1 lg:mb-2">
             قهوه عربیکا تانزانیا

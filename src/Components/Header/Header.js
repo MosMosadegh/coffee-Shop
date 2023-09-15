@@ -20,13 +20,9 @@ export default function Header() {
               <NavLink to="/">
                 صفحه اصلی
               </NavLink>
-              <NavLink to="/shop" className="relative group">
-                <a
-                  href="#"
-                  className="group-hover:text-orange-300 transition-colors"
-                >
+              <NavLink to="/shop" className="relative group group-hover:text-orange-300 transition-colors">
                   فروشگاه
-                </a>
+               
                 <div className="absolute top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible w-52 p-6 space-y-4 text-zinc-700 dark:text-white text-base bg-white dark:bg-zinc-700 rounded-2xl border-t-[3px] border-t-orange-300 tracking-normal shadow-normal  child:inline-block transition-all delay-75 child-hover:text-orange-300 ">
                   <a href="#">قهوه ویژه</a>
                   <a href="#">ویژه در سطح جهانی</a>
@@ -39,10 +35,10 @@ export default function Header() {
               <NavLink to="/dictionary">
                 دیکشنری
               </NavLink>
-              <NavLink to="/about">
+              <NavLink to="/blog">
                 بلاگ
               </NavLink>
-              <NavLink to="/blog">
+              <NavLink to="/about">
                 درباره ما
               </NavLink>
               <NavLink to="/contact">
