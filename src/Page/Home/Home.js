@@ -1,10 +1,14 @@
 import React from "react";
-import Products from "./Products";
+import Products from "../../Components/Product/Products";
 import CoffeeClub from "./CoffeeClub";
 import CategoryBanner from "./CategoryBanner";
 import ProductCategory from "./ProductCategory";
 import BestSelling from "./BestSelling";
 import BlogCard from "../Blog/BlogCard";
+import SectionHeader from "../../Components/SectionHeader/SectionHeader";
+import ContactUs from "./ContactUs";
+import Services from "./Services";
+
 
 export default function Home() {
   return (
@@ -45,42 +49,29 @@ export default function Home() {
       </div>
       <div className="container">
         <div className="w-[100%] lg:w-[95%] left-0 right-0 mx-auto">
-          
-           {/* //* products Head  */}
-        <div className="flex justify-between items-end mb-5 md:mb-12 pt-8 lg:pt-48">
-          <div>
-            <h3 className="section-title">جدیدترین محصولات</h3>
-            <span className="section-subtitle">فرآوری شده از دانه قهوه</span>
-          </div>
-          <a href="#" className="section-link">
-            <span className="hidden md:inline-block">مشاهده همه محصولات</span>
-            <span className="inline-block md:hidden">مشاهده همه</span>
-            <svg className="w-5 h-5">
-              <use href="#chevron-left"></use>
-            </svg>
-          </a>
-        </div>
+          {/* //* products Head  */}
+          <SectionHeader
+            title="جدیدترین محصولات"
+            decs="فرآوری شده از دانه قهوه"
+            btnTitle="مشاهده همه محصولات"
+          />
           <Products />
           <CategoryBanner />
           <ProductCategory />
+          
           <BestSelling />
           <CoffeeClub />
 
           {/* //* Blog Head  */}
-          <div className="flex justify-between items-end mb-5 md:mb-12">
-            <div>
-              <h3 className="section-title">مطالب خواندنی</h3>
-            </div>
-            <a href="#" className="section-link">
-              <span className="hidden md:inline-block">مشاهده همه مطالب</span>
-              <span className="inline-block md:hidden">مشاهده همه</span>
-              <svg className="w-5 h-5">
-                <use href="#chevron-left"></use>
-              </svg>
-            </a>
-          </div>
+          <SectionHeader title="مطالب خواندنی" btnTitle="مشاهده همه مطالب" />
           <BlogCard />
+
+          <ContactUs/>
+          <Services/>
+
         </div>
+      </div>
+      <div>
       </div>
     </>
   );

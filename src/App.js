@@ -3,8 +3,9 @@ import routes from "./routes";
 import { useRoutes } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import productContext from './Components/Context/ProductsContext'
-import productsData from "./Components/Data/productsData";
-import blogData from './Components/Data/blogData'
+import productsData from "./Data/productsData";
+import blogData from './Data/blogData'
+import Footer from "./Components/Footer/Footer";
 
 import "./App.css";
 
@@ -20,10 +21,10 @@ function App() {
         allBlogs
         }}>
 
-      <div>
-        <Header />
-      </div>
+      
+      <Header />
       <div>{router}</div>
+      <Footer/>
       </productContext.Provider>
     </div>
   );

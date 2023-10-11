@@ -1,10 +1,10 @@
 
-import About from './Components/About/About';
-import Blog from './Components/Blog/Blog';
-import Contact from './Components/Contact/Contact';
-import Dictionary from './Components/Dictionary/Dictionary';
-import Home from './Components/Home/Home';
-import Shop from './Components/Shop/Shop';
+import About from './Page/About/About';
+import Blog from './Page/Blog/Blog';
+import Contact from './Page/Contact/Contact';
+import Dictionary from './Page/Dictionary/Dictionary';
+import Home from './Page/Home/Home';
+import Shop from './Page/Shop/Shop';
 
 const routes = [
      {path:'/', element: <Home/>},

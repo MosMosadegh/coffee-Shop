@@ -1,5 +1,5 @@
 import React, { useContext, useRef, useState } from "react";
-import productsContext from "../Context/ProductsContext";
+import productsContext from "../../Components/Context/ProductsContext";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
@@ -9,6 +9,7 @@ export default function BestSelling() {
 
   return (
     <div className="mb-8 md:mb-20">
+      
       <div className="flex justify-between items-end mb-5 md:mb-12">
         <div>
           <h3 className="section-title">محصولات پر فروش</h3>

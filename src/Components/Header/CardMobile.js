@@ -3,7 +3,7 @@ import React from "react";
 export default function CardMobile({ isShowCardMobile, setIsShowCardMobile }) {
   return (
     <div
-      className={`fixed flex flex-col top-0 bottom-0 w-64 min-h-screen overflow-y-auto pt-5 px-4 bg-white dark:bg-zinc-700 z-20 transition-all ${
+      className={`fixed flex flex-col top-0 bottom-0 w-64 overflow-y-auto pt-5 px-4 bg-white dark:bg-zinc-700 z-20 transition-all ${
         isShowCardMobile ? "left-0" : "-left-64"
       }`}
     >

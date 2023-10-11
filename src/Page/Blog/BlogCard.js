@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import productsContext from "../Context/ProductsContext";
+import productsContext from "../../Components/Context/ProductsContext";
 
 export default function BlogCard() {
   const contextData = useContext(productsContext);

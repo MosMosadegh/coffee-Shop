@@ -11,7 +11,7 @@ export default function NavMobile({isShowNavMobile, setIsShowNavMobile}) {
   };
 
   return (
-    <div className={`fixed top-0 bottom-0 w-64 min-h-screen overflow-y-auto py-3 px-4 bg-white dark:bg-zinc-700 z-20 transition-all ${isShowNavMobile ? "right-0" : "-right-64"}`}>
+    <div className={`fixed top-0 bottom-0 w-64 overflow-y-auto py-3 px-4 bg-white dark:bg-zinc-700 z-20 transition-all ${isShowNavMobile ? "right-0" : "-right-64"}`}>
       {/* //* NAV Header */}
       <div className="flex justify-between items-center pb-5 mb-6 border-b border-b-gray-100 dark:border-b-white/10 ">
         <div className="flex gap-x-3.5 ">
