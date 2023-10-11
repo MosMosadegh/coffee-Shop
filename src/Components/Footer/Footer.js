@@ -112,8 +112,8 @@ export default function Footer() {
           </div>
           <p>
             تمام حقوق این رابط کاربری متعلق به{" "}
-            <span className="text-orange-300">سبزلرن</span> میباشد و دانشجوی این
-            دوره اجازه استفاده آن را در مصارف شخصی و تجاری ندارد.
+            <span className="text-orange-300">مصطفی مصدق</span> میباشد و کاربر این
+             اجازه استفاده آن را در مصارف شخصی و تجاری ندارد.
           </p>
           </div>
           <span className="ltr-text mr-auto">Copyright © 2023 Golden Coffee. All rights reserved.</span>
