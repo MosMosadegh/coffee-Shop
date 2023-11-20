@@ -112,7 +112,7 @@ export default function Footer() {
           </div>
           <p>
             تمام حقوق این رابط کاربری متعلق به{" "}
-            <span className="text-orange-300">مصطفی مصدق</span> میباشد و کاربر این
+            <span className="text-orange-300">مصطفی مصدق</span> میباشد و کاربر
              اجازه استفاده آن را در مصارف شخصی و تجاری ندارد.
           </p>
           </div>

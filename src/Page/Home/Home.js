@@ -54,6 +54,7 @@ export default function Home() {
             title="جدیدترین محصولات"
             decs="فرآوری شده از دانه قهوه"
             btnTitle="مشاهده همه محصولات"
+            btnHref='/shop'
           />
           <Products />
           <CategoryBanner />
@@ -63,7 +64,7 @@ export default function Home() {
           <CoffeeClub />
 
           {/* //* Blog Head  */}
-          <SectionHeader title="مطالب خواندنی" btnTitle="مشاهده همه مطالب" />
+          <SectionHeader title="مطالب خواندنی" btnTitle="مشاهده همه مطالب" btnHref='/blog' />
           <BlogCard />
 
           <ContactUs/>

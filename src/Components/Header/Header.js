@@ -75,15 +75,15 @@ export default function Header() {
             <span className="block w-px h-14 bg-white/20"></span>
 
             {/* //* Login Link  */}
-            <a
-              href="#"
+            <NavLink
+              to="/login"
               className="flex items-center gap-x-2.5 tracking-tightest"
             >
               <svg className="h-8 w-8 rotate-180">
                 <use href="#arrow-left-on-rectangle"></use>
               </svg>
               <span className="hidden xl:inline-block">ورود | ثبت‌نام</span>
-            </a>
+            </NavLink>
           </div>
         </div>
       </header>
