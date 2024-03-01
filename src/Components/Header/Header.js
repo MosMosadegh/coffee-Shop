@@ -5,6 +5,7 @@ import Card from "./Card";
 import HeaderMobile from "./HeaderMobile";
 
 export default function Header() {
+  
   return (
     <>
       <header className="fixed top-9 left-0 right-0 z-50 hidden md:flex items-center w-[98%] lg:w-[90%] h-24 px-5 lg:px-10 py-5 mx-auto bg-black/50 rounded-3xl backdrop-blur-[6px]">

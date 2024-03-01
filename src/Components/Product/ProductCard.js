@@ -1,8 +1,51 @@
 import React, { useContext } from "react";
 import productsContext from "../Context/ProductsContext";
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function ProductCard() {
   const contextData = useContext(productsContext);
+  
+  const notifyAddToBag = () => toast.success("محصول به سبد خرید اضافه شد", { theme: "colored" });
+  
+  const addToCart = (product) =>{
+    
+    
+    let isInUserCart = contextData.userCart.some(
+      (bagProduct) => bagProduct.title === product.title
+    );
+    console.log(isInUserCart);
+
+    if (!isInUserCart) {
+      let newProductCart = {
+        id: contextData.userCart.length + 1,
+        title: product.title,
+        img: product.img,
+        price: product.price,
+        offer: product.offer,
+        count: 1,
+      };
+      
+      const updatedCart = [...contextData.userCart, newProductCart];
+      contextData.updateUserCart(updatedCart);
+      notifyAddToBag();
+  
+
+    } else {
+      let userCart = [...contextData.userCart];
+      let newUserCart = userCart.map((bagProduct) => {
+        if (bagProduct.title === product.title) {
+          bagProduct.count += 1;
+        }
+        return (bagProduct);
+      }
+      );   
+      contextData.setUserCart(newUserCart);
+    }
+
+   }
+
 
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5 child:bg-white child:dark:bg-zinc-700 child:rounded-2xl child:shadow-normal">
@@ -57,11 +100,14 @@ export default function ProductCard() {
           )}
           <div className="flex items-center justify-between mt-2.5">
             <div className="flex items-center gap-x-2.5 md:gap-x-3">
-              <span className="flex-center w-[26px] h-[26px] md:w-9 md:h-9 text-gray-400 bg-gray-100 dark:bg-zinc-800 hover:bg-teal-600 dark:hover:bg-emerald-500 hover:text-white rounded-full cursor-pointer transition-all">
+              <span 
+              onClick={()=> {addToCart(productItems)}}
+              className="flex-center w-[26px] h-[26px] md:w-9 md:h-9 text-gray-400 bg-gray-100 dark:bg-zinc-800 hover:bg-teal-600 dark:hover:bg-emerald-500 hover:text-white rounded-full cursor-pointer transition-all">
                 <svg className="w-4 h-4 md:w-[22px] md:h-[22px]">
                   <use href="#shopping-cart"></use>
                 </svg>
               </span>
+              
               <span className="text-gray-400 hover:text-teal-600 dark:hover:text-emerald-500 rounded-full cursor-pointer transition-all">
                 <svg className="w-4 h-4 md:w-6 md:h-6">
                   <use href="#arrows-right-left"></use>
@@ -90,6 +136,7 @@ export default function ProductCard() {
           </div>
         </div>
       ))}
+      <ToastContainer />
     </div>
   );
 }

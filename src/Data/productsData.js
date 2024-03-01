@@ -28,7 +28,7 @@ const productsData = [
   },
   {
     id: 4,
-    title: "قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی",
+    title: "قهوه عربی بن مانو مقدار 250 گرم خط دوم اسم طولانی",
     img: "./images/products/p4.png",
     price: 135000,
     count: 0,
@@ -46,7 +46,7 @@ const productsData = [
   },
   {
     id: 6,
-    title: "قهوه ترک بن مانو مقدار 500 گرم خط دوم اسم طولانی",
+    title: "قهوه عربیکا بن مانو مقدار 500 گرم خط دوم اسم طولانی",
     img: "./images/products/p6.png",
     price: 263000,
     count: 34,
@@ -55,7 +55,7 @@ const productsData = [
   },
   {
     id: 7,
-    title: "قهوه ترک بن مانو مقدار 500 گرم خط دوم اسم طولانی",
+    title: "قهوه اسپرسو بن مانو مقدار 500 گرم خط دوم اسم طولانی",
     img: "./images/products/p7.png",
     price: 247000,
     count: 34,
@@ -64,7 +64,7 @@ const productsData = [
   },
   {
     id: 8,
-    title: "قهوه ترک بن مانو مقدار 500 گرم خط دوم اسم طولانی",
+    title: "قهوه عربی بن مانو مقدار 500 گرم خط دوم اسم طولانی",
     img: "./images/products/p8.png",
     price: 254000,
     count: 34,

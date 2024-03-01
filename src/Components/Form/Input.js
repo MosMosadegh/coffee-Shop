@@ -31,11 +31,11 @@ export default function Input(props) {
     onInputHandler(id, value, isValid);
   }, [value]);
 
-  const onChangeHAndler = (e) => {
-    console.log(e.target.value);
+  const onChangeHandler = (event) => {
+    console.log(event.target.value);
     dispatch({
       type: "CHANGE",
-      value: e.target.value,
+      value: event.target.value,
       validations: props.validations,
       isValid: true,
     });
@@ -49,14 +49,16 @@ export default function Input(props) {
         className={`${props.className} ${
           mainInput.isValid ? "success" : "error"
         }`}
-        onChange={onChangeHAndler}
         value={mainInput.value}
+        onChange={onChangeHandler}
       />
     ) : (
       <textarea
         placeholder={props.placeholder}
-        className={props.className}
-        onChange={onChangeHAndler}
+        className={`${props.className} ${
+          mainInput.isValid ? "success" : "error"
+        }`}
+        onChange={onChangeHandler}
         value={mainInput.value}
       />
     );

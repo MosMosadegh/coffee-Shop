@@ -108,13 +108,15 @@ export default function NavMobile({isShowNavMobile, setIsShowNavMobile}) {
 
       {/* //*NAV Footer  */}
       <div className="flex flex-col items-start space-y-6 py-8 px-2.5 mt-8 border-t border-t-gray-100 dark:border-t-white/10 text-orange-300">
+      
         {/* //* Login Link  */}
-        <a href="#" className="inline-flex items-center gap-x-2">
+        <NavLink to="/login" className="inline-flex items-center gap-x-2">
           <svg className="h-5 w-5 rotate-180">
             <use href="#arrow-left-on-rectangle"></use>
           </svg>
           <span className="">ورود | ثبت‌ نام</span>
-        </a>
+        </NavLink>
+       
         {/* //* Theme Toggle  */}
         <div className="flex items-center gap-x-2">
           <Flowbite className="h-5 w-5">
